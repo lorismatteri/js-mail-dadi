@@ -1,0 +1,47 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#btn_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  background: red;
+  margin-bottom: 1rem;
+}
+
+#tira_dadi {
+  padding: 1rem;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+h3 {
+  text-align: center;
+}
+.row {
+  display: flex;
+  justify-content: center;
+}
+
+.dado {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  width: 100px;
+  background: lightblue;
+  margin: 1rem;
+}
+
+.dado p {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+#greetings {
+  text-align: center;
+}
