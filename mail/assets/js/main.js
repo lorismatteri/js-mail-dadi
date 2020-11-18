@@ -6,8 +6,25 @@ var userMail = prompt('Inserisci il tuo indirizzo e-mail');
 
 var mails = ['cristianoronaldo@gmail.com', 'diozlatan@gmail.com', 'leomessi@gmail.com'];
 
-if (mails[0] == userMail || mails[1] == userMail || mails[2] == userMail) {
+var newMail = false;
+
+// if (mails[0] == userMail || mails[1] == userMail || mails[2] == userMail) {
+//   document.getElementById('welcome').innerHTML = "Ciao " + userMail + ", benvenuto nel lato oscuro della Forza!";
+// } else {
+//   document.getElementById('welcome').innerHTML = "Addio " + userMail + ", non sei degno!";
+// }
+
+// proviamo a usare for stavolta per bene
+for (i = 0; i < mails.length; i++) {
+  var email = mails[i];
+
+  if (email === userMail) {
+    newMail = true;
+  }
+}
+
+if (newMail) {
   document.getElementById('welcome').innerHTML = "Ciao " + userMail + ", benvenuto nel lato oscuro della Forza!";
-} else {
+  } else {
   document.getElementById('welcome').innerHTML = "Addio " + userMail + ", non sei degno!";
 }
